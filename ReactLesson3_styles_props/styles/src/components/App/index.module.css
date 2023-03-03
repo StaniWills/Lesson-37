@@ -1,0 +1,24 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.item{
+    background-color: rgba(104, 46, 174, 0.1); ;
+    color: rgba(104, 46, 174, 0.5);
+    font-size: 90px;
+    border: 5px solid blueviolet;
+    width: auto;
+    height: auto;
+    padding: 30px;
+}
+
+.block_item{
+    background-color: rgba(104, 46, 174, 0.1); ;
+    color: rgba(104, 46, 174, 0.5);
+    font-size: 90px;
+    border: 5px solid blueviolet;
+    width: auto;
+    height: auto;
+    padding: 30px;
+}
