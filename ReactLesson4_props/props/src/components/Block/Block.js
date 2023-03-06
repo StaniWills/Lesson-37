@@ -1,10 +1,15 @@
+import './Block.css'
 
 function Block(props) {
-    console.log(props);
+    // const title = props.title
+    // const post = props.post
+    const { title, text, color, size } = props
+
     return (
-      <div>
-        <h2>Title Post</h2>
-        <p>Text Post</p>
+      <div className={`block_item ${size}`} style={{backgroundColor: color}}>
+        <h2>{title}</h2>
+        <p>{text}</p>
+
       </div>
     )
   }
