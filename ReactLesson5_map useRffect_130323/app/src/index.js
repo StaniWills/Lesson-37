@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import App from './components/map/App';      // vers. 1
-import App from './components/useState/App';       //vers. 2
+
+// Урок по map (props)
+// import App from './components/map/App';
+
+// Урок useState
+import App from './components/useState/App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
