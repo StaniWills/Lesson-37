@@ -1,0 +1,26 @@
+Em.warning_text{
+    text-align: end;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+}
+.warning_text{
+    text-align: end;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.info_text{
+    width: 350px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}

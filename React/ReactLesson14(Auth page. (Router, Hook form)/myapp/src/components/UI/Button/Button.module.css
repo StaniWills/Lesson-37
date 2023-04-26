@@ -1,0 +1,39 @@
+.button_elem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+  
+    position: static;
+    width: 356px;
+    left: calc(50% - 356px/2);
+    top: 0%;
+    bottom: 53.85%;
+    border-radius: 55px;
+  
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+  
+    color: #1A1A1A;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  
+    cursor: pointer;
+  }
+
+  .yellow{
+    background-color: #FFE44D;
+    border: none;
+  }
+
+  .white{
+    background-color: white;
+    border: 0.5px solid #CFD8DC;
+  }

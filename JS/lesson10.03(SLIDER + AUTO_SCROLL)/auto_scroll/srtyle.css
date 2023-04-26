@@ -1,0 +1,38 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.header_wrapper{
+    height: 180px;
+    background-color:bisque;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+
+
+.menu_wrapper{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.content_wrapper{
+    display: flex;
+    gap: 150px;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: coral;
+}

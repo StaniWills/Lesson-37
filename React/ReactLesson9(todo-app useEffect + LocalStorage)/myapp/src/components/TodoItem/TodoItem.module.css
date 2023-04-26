@@ -1,0 +1,9 @@
+.todo_elem{
+    display: flex;
+    flex-direction: column;
+
+    outline: 2px solid black;
+    box-shadow: 5px 5px 15px black;
+    padding: 25px;
+    margin: 20px 250px;
+}

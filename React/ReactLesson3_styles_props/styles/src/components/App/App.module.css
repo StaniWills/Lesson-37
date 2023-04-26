@@ -1,0 +1,13 @@
+.item{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.yellow{
+    color: yellow
+}
+
+#card{
+    color: orange
+}

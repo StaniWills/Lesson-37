@@ -1,0 +1,21 @@
+.header_wrapper{
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 180px;
+    background-color: bisque;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+.menu_wrapper{
+    display: flex;
+    gap: 50px
+}
