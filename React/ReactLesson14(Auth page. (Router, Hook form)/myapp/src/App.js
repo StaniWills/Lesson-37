@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Link to={'/reg'}>
-        <Button onClick={()=>setActive(true)} title={'Авторизация!'} color={'yellow'}/>
+        <Button onClick={()=>setActive(true)} title={'Регистрация / Авторизация'} color={'yellow'}/>
       </Link>
       <Modal active={active} setActive={setActive}/>
     </div>

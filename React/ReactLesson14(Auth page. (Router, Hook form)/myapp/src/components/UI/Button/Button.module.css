@@ -37,3 +37,9 @@
     background-color: white;
     border: 0.5px solid #CFD8DC;
   }
+
+  .purple{
+    background-color: purple;
+    border: 2px solid rgb(89, 2, 89);
+    color: white
+  }

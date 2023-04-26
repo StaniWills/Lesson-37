@@ -1,7 +1,11 @@
 import FormElem from '../FormElem/FormElem'
 import Button from '../UI/Button/Button'
 import styles from './Modal.module.css'
-import { Routes, Route } from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
+
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faXmark} from '@fortawesome/free-solid-svg-icons'
+{/* <FontAwesomeIcon icon={faXmark}/> */}
 
 
 function Modal(props){
@@ -9,30 +13,32 @@ function Modal(props){
     const {active, setActive} = props
 
     return(
-        <div className={`${styles.modal} ${active && styles.active}`}>
-            <div className={`${styles.modal_content} ${active && styles.active}`}>
+        <div onClick={() => setActive(false)} className={`${styles.modal} ${active && styles.active}`}>
+            <div onClick={(e) => e.stopPropagation()} className={`${styles.modal_content} ${active && styles.active}`}>
+            <FontAwesomeIcon onClick={() => setActive(false)} icon={faXmark} style={{position: 'absolute', right: '5%'}}/>
                 <Routes>
                     <Route path='/reg' element={
                         <FormElem
-                            title={'Registration'}
+                            title={'Регистрация'}
                             link={'/login'}
-                            input ={{email: 'Email', password: 'Password'}}
-                            button={{redirect: 'Betreten', submit: 'Registieren'}}
+                            input={{email: 'Почта', password: 'Пароль', secondPassword: 'Введите пароль еще раз'}}
+                            button={{redirect: 'Войти', submit: 'Зарегистрироваться'}}
                             infoText={'Регстрируясь на сайте, вы соглашаетесь с нашими правилами и политикой конфиденциальности и соглашается на информационную рассылку'}
+                            type={'reg'}
                         />
                     }/>
-
-                    <Route path='/login'element={
+                    <Route path='/login' element={
                         <FormElem
-                            title={'Genehmigung'}
+                            title={'Авторизация'}
                             link={'/reg'}
-                            input ={{email: 'Email', password: 'Password'}}
-                            button={{redirect: 'Registieren', submit: 'Betreten'}}
+                            input={{email: 'Почта', password: 'Пароль'}}
+                            button={{redirect: 'Регистрация', submit: 'Авторизоваться'}}
                             infoText={'Введите логин и пароль вашего аккаунта'}
+                            type={'login'}
+
                         />
                     }/>
                 </Routes>
-                <button onClick={() => setActive(false)}>X</button>
             </div>
         </div>
     )

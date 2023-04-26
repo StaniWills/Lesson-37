@@ -1,11 +1,3 @@
-Em.warning_text{
-    text-align: end;
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 12px;
-}
 .warning_text{
     text-align: end;
     color: red;
@@ -13,6 +5,7 @@ Em.warning_text{
     font-style: normal;
     font-weight: 200;
     font-size: 12px;
+    line-height: 14px;
 }
 
 .info_text{
