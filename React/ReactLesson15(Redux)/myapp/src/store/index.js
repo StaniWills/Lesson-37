@@ -1,26 +1,16 @@
-import {createStore} from 'redux'
+import {applyMiddleware, combineReducers, createStore} from 'redux'
+import { countReducer } from './countReducer'
+import { emplReducer } from './emplReducer'
+import { userReducer } from './userReducer'
+// thunk - библиотека, позволяющая работать с асинхронным кодом внутри redux храналища
+import thunk from 'redux-thunk'
+
+// combineReducers объединяет несколько редьюсеров
+const rootReducer = combineReducers({
+    count: countReducer,
+    empl: emplReducer,
+    users: userReducer
+})
 
 
-const defaultStore = {
-    count: 0
-}
-
-
-const reducer = (store = defaultStore, action) => {
-    switch (action.type){
-        case 'INCR_BY_N':
-            return {...store, count: store.count + action.payload}
-        case 'DECR_BY_N':
-            return {...store, count: store.count - action.payload}
-        default:
-            return store 
-    }
-}
-
-
-export const store = createStore(reducer)
-
-
-// Добавить в reducer 2 кейса, которые будут добавлять и убавлять значение стейта на 100
-// На стороне компонента сделать 2 кнопки
-
+export const store = createStore(rootReducer, applyMiddleware(thunk))
