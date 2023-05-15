@@ -4,7 +4,7 @@ const defaultState = {
         {id: 11, name: 'Steven Wilyam'},
         {id: 12, name: 'John Snow'},
         {id: 13, name: 'Neena Stolkovich'},
-    ],
+    ]
 }
 
 const ADD_NEW_USER = 'ADD_NEW_USER'
