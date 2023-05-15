@@ -1,0 +1,5 @@
+.div_elem{
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
